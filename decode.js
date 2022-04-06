@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = byteaToBinary
+export default byteaToBinary
 
 function byteaToBinary (input) {
   if (/^\\x/.test(input)) {

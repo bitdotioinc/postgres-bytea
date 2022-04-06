@@ -1,9 +1,9 @@
 'use strict'
 
-const test = require('tape-promise').default(require('tape'))
-const { Readable } = require('stream')
-const streamToPromise = require('stream-to-promise')
-const Encoder = require('./encoder')
+import test from 'tape-promise/tape'
+import Readable from 'stream'
+import streamToPromise from 'stream-to-promise'
+import Encoder from './encoder.js'
 
 test('encoder', (t) => {
   t.test('empty input gives empty result', async (t) => {

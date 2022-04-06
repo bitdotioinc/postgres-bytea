@@ -1,7 +1,7 @@
 'use strict'
 
-const test = require('tape')
-const decode = require('./')
+import test from 'tape'
+import decode from './decode.js'
 
 test('decode', (t) => {
   t.test('pg <9 escape format', (t) => {

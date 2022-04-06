@@ -1,7 +1,7 @@
 'use strict'
 
-const BufferList = require('obuf')
-const { Transform } = require('stream')
+import BufferList from 'obuf'
+import Transform from 'stream'
 
 const State = {
   READ_PREFIX: 1,
@@ -53,4 +53,4 @@ class ByteaDecoder extends Transform {
   }
 }
 
-module.exports = ByteaDecoder
+export default ByteaDecoder

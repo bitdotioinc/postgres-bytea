@@ -1,10 +1,10 @@
 'use strict'
 
-const test = require('tape-promise').default(require('tape'))
+import test from 'tape-promise/tape'
 
-const { Readable } = require('stream')
-const streamToPromise = require('stream-to-promise')
-const Decoder = require('./decoder')
+import Readable from 'stream'
+import streamToPromise from 'stream-to-promise'
+import Decoder from './decoder.js'
 
 test('decoder', (t) => {
   t.test('input cuts at chunk boundary', async (t) => {
